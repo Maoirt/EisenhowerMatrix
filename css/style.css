@@ -1,0 +1,474 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+
+
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-horizontal {
+    height: 0;
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #737CCF;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+}
+
+.wrp {
+    margin: 0 50px;
+}
+
+.header__wrp {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 28px;
+}
+
+.header__title {
+    font-size: 32px;
+    color: #E1E5F8;
+
+}
+
+.footer__contact {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #E1E5F8;
+}
+
+.all {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding: 30px;
+    flex: 1 1 auto;
+}
+
+.matrix {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    margin: 30px;
+    width: 1750px;
+    /*  */
+    height: 340px;
+    /* */
+    overflow: hidden;
+
+
+    position: relative;
+}
+
+.task-form {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+.matrix>div {
+    flex-basis: 33.33%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+}
+
+.matrix>div h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    color: #737CCF;
+    background-color: #E1E5F8;
+    margin: 0;
+}
+
+.matrix>ul {
+    padding: 10px;
+    margin: 0;
+    height: 400px;
+}
+
+.matrix>div form {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 20px;
+}
+
+.matrix>div input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.matrix>div button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #737CCF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.matrix>div button[type="submit"]:hover {
+    background-color: #5566A4;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 3px;
+
+
+    width: 840px;
+    word-wrap: break-word;
+
+}
+
+/* form {
+    margin-top: 10px;
+} */
+
+form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+form>label {
+    flex-shrink: 0;
+    padding-right: 10px;
+    font-weight: bold;
+    color: #737CCF;
+}
+
+form>input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .matrix {
+        flex-direction: column;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        margin-top: 10px;
+    }
+}
+
+.task-list {
+    max-height: 175px;
+    overflow-y: auto;
+}
+
+
+li>button {
+    margin-left: 5px;
+}
+
+button.completed-button,
+button.delete-button,
+button.start-button,
+button.end-button,
+button.pause-button,
+button.resume-button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 2px solid #737CCF;
+    background-color: #fff;
+    color: #737CCF;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button.delete-button:hover,
+button.completed-button:hover,
+button.start-button:hover,
+button.end-button:hover,
+button.pause-button:hover,
+button.resume-button:hover {
+    background-color: #737CCF;
+    color: #fff;
+}
+
+
+
+.count-completed-task,
+.count-time,
+.count-created-task {
+    margin-left: 30px;
+    font-size: 22px;
+    white-space: nowrap;
+    color: #E1E5F8;
+    display: flex;
+}
+
+.count-time {
+    margin-top: 10px;
+}
+
+.count-completed-task>* {
+    padding-right: 50px;
+}
+
+.count-time>* {
+    padding-right: 50px;
+}
+
+.count-created-task>* {
+    padding-right: 50px;
+
+}
+
+.count-completed-task,
+.count-time,
+.count-created-task {
+    display: flex;
+    justify-content: center;
+
+}
+
+.completed,
+.completed-all,
+.time,
+.time-all,
+.created,
+.created-all {
+    text-align: center;
+}
+
+.title {
+    font-size: 32px;
+    color: #E1E5F8;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.title__second {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 2px solid #737CCF;
+    background-color: #fff;
+    color: #737CCF;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.completed-counter,
+.completed-counter-all,
+.time-counter-time,
+.time-counter-all,
+.created-counter-all,
+.created-counter {
+    margin-top: 10px;
+}
+
+.task-date {
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #666;
+    margin-left: 0.5rem;
+}
+
+.time-counter {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    color: #fff;
+    /* border-radius: 55px;
+         border: 2px solid #737CCF; */
+    background-color: #737CCF;
+
+
+}

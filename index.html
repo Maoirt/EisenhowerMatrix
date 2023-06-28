@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="all">
+            <header class="header">
+                <div class="wrp">
+                    <div class="header__wrp">
+                        <div class="header__title">
+                            Eisenhower Matrix
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div class="matrix">
+                    <div class="important-urgent">
+                        <h2>Важно & Срочно</h2>
+                        <ul id="important-urgent-list" class="task-list"></ul>
+                        <form id="important-urgent-form" class="task-form">
+                            <input type="text" name="task" placeholder="Введите задачу">
+                            <button type="submit">Add</button>
+                        </form>
+                    </div>
+                    <div class="important-not-urgent">
+                        <h2>Важно & Не срочно</h2>
+                        <ul id="important-not-urgent-list" class="task-list"></ul>
+                        <form id="important-not-urgent-form" class="task-form">
+                            <input type="text" name="task" placeholder="Введите задачу">
+                            <button type="submit">Add</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="matrix">
+                    <div class="not-important-urgent">
+                        <h2>Не важно & Срочно</h2>
+                        <ul id="not-important-urgent-list" class="task-list"></ul>
+                        <form id="not-important-urgent-form" class="task-form">
+                            <input type="text" name="task" placeholder="Введите задачу">
+                            <button type="submit">Add</button>
+                        </form>
+                    </div>
+                    <div class="not-important-not-urgent">
+                        <h2>Не важно & Не срочно</h2>
+                        <ul id="not-important-not-urgent-list" class="task-list"></ul>
+                        <form id="not-important-not-urgent-form" class="task-form">
+                            <input type="text" name="task" placeholder="Введите задачу">
+                            <button type="submit">Add</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+
+            <div class="data">
+                <div class="title">Данные о вашей работе:</div>
+
+                <div class="title title__second">Созданные задачи</div>
+                <div class="count-created-task">
+                    <div class="created">
+                        За сессию:
+                        <div class="created-counter">0</div>
+                    </div>
+                    <div class="created-all">
+                        За все время:
+                        <div class="created-counter-all" id="created-counter-all">0</div>
+                    </div>
+                </div>
+                <div class="title title__second">Выполненные задачи</div>
+                <div class="count-completed-task">
+                    <div class="completed">
+                        За сессию:
+                        <div class="completed-counter">0</div>
+                    </div>
+                    <div class="completed-all">
+                        За все время:
+                        <div class="completed-counter-all" id="completed-counter-all">0</div>
+                    </div>
+
+                </div>
+                <div class="title title__second">Затраченное время на выполненные задачи (в минутах) </div>
+                <div class="count-time">
+                    <div class="time">
+                        За сессию:
+                        <div class="time-counter-time">0</div>
+                    </div>
+                    <div class="time-all">
+                        За все время:
+                        <div class="time-counter-all" id="time-counter-all">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer__contact">
+                    © Maoirt 2023
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="js/script.js"> </script>
+    </body>
+
+</html>
